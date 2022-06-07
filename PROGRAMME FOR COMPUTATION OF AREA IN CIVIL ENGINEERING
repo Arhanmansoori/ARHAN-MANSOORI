@@ -1,0 +1,361 @@
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+float distance,number,num,first,last,simpson,trapezoidal,offset1,offset2,offset3,offset4,offset5,offset6,offset7,offset8,offset9,offset10,offset11,offset12,offset13,offset14,offset15;
+clrscr();
+cout<<"\n\t\tPRESS 1 TO USE SIMPSON'S RULE :\n\t\tPRESS 2 TO USE TRAPEZOIDAL RULE: \n";
+cin>>num;
+if(num==1)
+{
+cout<<"THE USER HAS CHOSEN THE SIMPSON'S RULE : \n";
+cout<<"PLEASE GIVE THE NUMBER OF OFFSETS EXCLUDING FIRST AND LAST ORDINATE: \n";
+cin>>number;
+  if(number==5)
+ {
+cout<<"THE USER HAS CHOSEN 5 OFFSET READINGS :\n";
+cout<<"enter the distance : \n";
+cin>>distance;
+cout<<"enter first ordinate: \n";
+cin>>first;
+cout<<"enter the last ordinate : \n";
+cin>>last;
+cout<<"enter the even ordinates: \n";
+cin>>offset2>>offset4;
+cout<<"enter the odd ordinates : \n";
+cin>>offset1>>offset3>>offset5;
+simpson=distance/3*(first+last+4*(offset2+offset4)+2*(offset1+offset3+offset5));
+cout<<"the area obtained for the 5 ordinates readings is equal to : \n"<<simpson;
+}
+else if(number==6)
+{
+cout<<"THE USER HAS CHOSEN 6 OFFSET READINGS : \n";
+cout<<"enter the common distance :\n";
+cin>>distance;
+cout<<"enter the first ordinate : \n";
+cin>>first;
+cout<<"enter the last ordinate : \n";
+cin>>last;
+cout<<"enter the even offset readings : \n";
+cin>>offset2>>offset4>>offset6;
+cout<<"enter the odd offset readings : \n";
+cin>>offset1>>offset3>>offset5;
+simpson=distance/3*(first+last+4*(offset2+offset4+offset6)+2*(offset1+offset3+offset5));
+cout<<"the area obtained for the 6 offset readings is equal to : \n"<<simpson;
+}
+else if(number==7)
+{
+cout<<"THE USER HAS CHOSEN 7 OFFSET READINGS :\n";
+cout<<"enter the common distance : \n";
+cin>>distance;
+cout<<"enter the first ordinate: \n";
+cin>>first;
+cout<<"enter the last ordinate : \n";
+cin>>last;
+cout<<"enter the even ordinates: \n";
+cin>>offset2>>offset4>>offset6;
+cout<<"enter the odd offset readings : \n";
+cin>>offset1>>offset3>>offset5>>offset7;
+simpson=distance/3*(first+last+4*(offset2+offset4+offset6)+2*(offset1+offset3+offset5+offset7));
+cout<<"the area obtained for 7 offset readings is equal to : \n"<<simpson;
+}
+else if(number==8)
+{
+cout<<"THE USER HAS CHOSEN 8 OFFSET READINGS :\n";
+cout<<"enter the common distance : \n";
+cin>>distance;
+cout<<"enter the first ordinate : \n";
+cin>>first;
+cout<<"enter  the last ordinate : \n";
+cin>>last;
+cout<<"enter the even offset readings : \n";
+cin>>offset2>>offset4>>offset6>>offset8;
+cout<<"enter the odd offset readings : \n";
+cin>>offset1>>offset3>>offset5>>offset7;
+simpson=distance/3*(first+last+4*(offset2+offset4+offset6+offset8)+2*(offset1+offset3+offset5+offset7));
+cout<<"the area calculated for the 8 offset readings is equal to : \n"<<simpson;
+}
+else if(number==9)
+{
+cout<<"THE USER HAS CHOSE 9 OFFSET READINGS : \n";
+cout<<"enter the common distance : \n";
+cin>>distance;
+cout<<"enter the first ordinate: \n";
+cin>>first;
+cout<<"enter the last ordinate: \n";
+cin>>last;
+cout<<"enter the even ordinates readings : \n";
+cin>>offset2>>offset4>>offset6>>offset8;
+cout<<"enter the odd ordinates readings : \n";
+cin>>offset1>>offset3>>offset5>>offset7>>offset9;
+simpson=distance/3*(first+last+4*(offset2+offset4+offset6+offset8)+2*(offset1+offset3+offset5+offset7+offset9));
+cout<<"the distance obtained for 9 offset readings is equal to : \n"<<simpson;
+}
+else if(number==10)
+{
+cout<<"THE USER HAS CHOSE 10 OFFSET READINGS :\n";
+cout<<"enter the common distance : \n";
+cin>>distance;
+cout<<"enter the first ordinate: \n";
+cin>>first;
+cout<<"enter the last ordinate : \n";
+cin>>last;
+cout<<"enter the even offset readings : \n";
+cin>>offset2>>offset4>>offset6>>offset8>>offset10;
+cout<<"enter the odd ordintates readings: \n";
+cin>>offset1>>offset3>>offset5>>offset7>>offset9;
+simpson=distance/3*(first+last+4*(offset2+offset4+offset6+offset8+offset10)+2*(offset1+offset3+offset5+offset7+offset9));
+cout<<"the area obtained for 10 offset readings is equal to : \n"<<simpson;
+}
+else if(number==11)
+{
+cout<<"THE USER HAS CHOSEN 11 OFFSET READINGS :\n";
+cout<<"enter the common distance :\n";
+cin>>distance;
+cout<<"enter the first ordinate : \n";
+cin>>first;
+cout<<"enter the last ordinate : \n";
+cin>>last;
+cout<<"enter the even offset readings : \n";
+cin>>offset2>>offset4>>offset6>>offset8>>offset10;
+cout<<"enter the odd offset readings : \n";
+cin>>offset1>>offset3>>offset5>>offset7>>offset9>>offset11;
+simpson=distance/3*(first+last+4*(offset2+offset4+offset6+offset8+offset10)+2*(offset1+offset3+offset5+offset7+offset9+offset11));
+cout<<"the area obtained for 11 offset readings is equal to : \n"<<simpson;
+}
+
+else if(number==12)
+{
+cout<<"THE USER HAS CHOSEN THE 12 OFFSET READINGS : \n";
+cout<<"enter the common distance : \n";
+cin>>distance;
+cout<<"enter the first ordinate : \n";
+cin>>first;
+cout<<"enter the last ordinate : \n";
+cin>>last;
+cout<<"ente the even offset readings : \n";
+cin>>offset2>>offset4>>offset6>>offset8>>offset10>>offset12;
+cout<<"enter the odd offset readings : \n";
+cin>>offset1>>offset3>>offset5>>offset7>>offset9>>offset11;
+simpson=distance/3*(first+last+4*(offset2+offset4+offset6+offset8+offset10+offset12)+2*(offset1+offset3+offset5+offset7+offset9+offset11));
+cout<<"the area calculated for 12 offset readings is equal to : \n"<<simpson;
+}
+else if(number==13)
+{
+cout<<"THE USER HAS CHOSEN 13 OFFSET READINGS : \n";
+cout<<"enter the common distance : \n";
+cin>>distance;
+cout<<"enter the first ordinate : \n";
+cin>>first;
+cout<<"enter the last ordinate : \n";
+cin>>last;
+cout<<"enter the even offset readings : \n";
+cin>>offset2>>offset4>>offset6>>offset8>>offset10>>offset12;
+cout<<"enter the odd offset readings : \n";
+cin>>offset1>>offset3>>offset5>>offset7>>offset9>>offset11>>offset13;
+simpson=distance/3*(first+last+4*(offset2+offset4+offset6+offset8+offset10+offset12)+2*(offset1+offset3+offset5+offset7+offset9+offset11+offset13));
+cout<<"the area obtained for 13 offset readings is equal to : \n"<<simpson;
+}
+else if(number==14)
+{
+cout<<"THE USER HAS CHOSEN 14 OFFSET READINGS :\n";
+cout<<"enter the common distance : \n";
+cin>>distance;
+cout<<"enter the first ordinate : \n";
+cin>>first;
+cout<<"enter the last ordinate : \n";
+cin>>last;
+cout<<"enter the even offset readings : \n";
+cin>>offset2>>offset4>>offset6>>offset8>>offset10>>offset12>>offset14;
+cout<<"enter the odd offset readings : \n";
+cin>>offset1>>offset3>>offset5>>offset7>>offset9>>offset11>>offset13;
+simpson=distance/3*(first+last+4*(offset2+offset4+offset6+offset8+offset10+offset12+offset14)+2*(offset1+offset3+offset5+offset7+offset9+offset11+offset13));
+cout<<"the area obtained for 14 offset readings is equal to : \n"<<simpson;
+}
+else if(number==15)
+{
+cout<<"THE USER HAS CHOSEN 15 OFFSET READINGS : \n";
+cout<<"enter common distance : \n";
+cin>>distance;
+cout<<"enter the first ordinate : \n";
+cin>>first;
+cout<<"enter the last ordinate : \n";
+cin>>last;
+cout<<"enter the even offset readings : \n";
+cin>>offset2>>offset4>>offset6>>offset8>>offset10>>offset12>>offset14;
+cout<<"enter the odd offset readings : \n";
+cin>>offset1>>offset3>>offset5>>offset7>>offset9>>offset11>>offset13>>offset15;
+simpson=distance/3*(first+last+4*(offset2+offset4+offset6+offset8+offset10+offset12+offset14)+2*(offset1+offset3+offset5+offset7+offset9+offset11+offset13+offset15));
+cout<<"the area obtained for 15 offset readings is equal to : \n"<<simpson;
+}
+else if(number>=16)
+{
+cout<<"THE PROGRAMME CANT COMPUTE AREA FOR MORE THAN 15 OFFSET READINGS : \n";
+}
+}
+else if(num==2)
+{
+cout<<"THE USER HAS CHOSEN TRAPEZOIDAL RULE : \n";
+cout<<"PLEASE GIVE THE NUMBER OF OFFSETS EXCLUDING FIRST AND LAST ORDINATE READINGS : \n";
+cin>>number;
+ if(number==5)
+{
+cout<<"THE USER HAS CHOSEN 5 OFFSET READINGS : \n";
+cout<<"enter the common distance : \n";
+cin>>distance;
+cout<<"enter the first ordinate : \n";
+cin>>first;
+cout<<"enter the last ordinate: \n";
+cin>>last;
+cout<<"enter the 5 offset readings : \n";
+cin>>offset1>>offset2>>offset3>>offset4>>offset5;
+trapezoidal=distance/2*(first+last+2*(offset1+offset2+offset3+offset4+offset5));
+cout<<"the area obtained for 5 offset readings is equal to : \n"<<trapezoidal;
+}
+else if(number==6)
+{
+cout<<"THE USER HAS CHOSEN 6 OFFSET READINGS : \n";
+cout<<"enter the common distance : \n";
+cin>>distance;
+cout<<"enter the first ordinate : \n";
+cin>>first;
+cout<<"enter the last ordinate : \n";
+cin>>last;
+cout<<"enter the 6 offset readings : \n";
+cin>>offset1>>offset2>>offset3>>offset4>>offset5>>offset6;
+trapezoidal=distance/2*(first+last+2*(offset1+offset2+offset3+offset4+offset5+offset6));
+cout<<"the area obtained for 6 offset readings is equal to :\n"<<trapezoidal;
+}
+else if(number==7)
+{
+cout<<"THE USER HAS CHOSEN 7 OFFSET READINGS : \n";
+cout<<"enter the common distance : \n";
+cin>>distance;
+cout<<"enter the first ordinate : \n";
+cin>>first;
+cout<<"enter the last ordinate : \n";
+cin>>last;
+cout<<"enter the 7 offset readings : \n";
+cin>>offset1>>offset2>>offset3>>offset4>>offset5>>offset6>>offset7;
+trapezoidal=distance/2*(first+last+2*(offset1+offset2+offset3+offset4+offset5+offset6+offset7));
+cout<<"the area obtained for 7 offset readings is equal to : \n"<<trapezoidal;
+}
+else if(number==8)
+{
+cout<<"THE USER HAS CHOSEN 8 OFFSET READINGS : \n";
+cout<<"enter the common distance : \n";
+cin>>distance;
+cout<<"enter first ordinate : \n";
+cin>>first;
+cout<<"enter last ordinate : \n";
+cin>>last;
+cout<<"enter the 8 offset readings : \n";
+cin>>offset1>>offset2>>offset3>>offset4>>offset5>>offset6>>offset7>>offset8;
+trapezoidal=distance/2*(first+last+2*(offset1+offset2+offset3+offset4+offset6+offset7+offset8));
+cout<<"the area obtained for 8 offset readings is equal to : \n"<<trapezoidal;
+}
+else if(number==9)
+{
+cout<<"THE USER HAS CHOSEN 9 OFFSET READINGS :\n";
+cout<<"enter the common distance : \n";
+cin>>distance;
+cout<<"enter the first ordinate : \n";
+cin>>first;
+cout<<"enter the last ordinate : \n";
+cin>>last;
+cout<<"enter the 9 offset readings : \n";
+cin>>offset1>>offset2>>offset3>>offset4>>offset5>>offset6>>offset7>>offset8>>offset9;
+trapezoidal=distance/2*(first+last+2*(offset1+offset2+offset3+offset4+offset5+offset6+offset7+offset8+offset9));
+cout<<"the area obtained for 9 offset readings is equal to : \n"<<trapezoidal;
+}
+else if(number==10)
+{
+cout<<"THE USER HAS CHOSEN 10 OFFSET READINGS : \n";
+cout<<"enter common distance:\n";
+cin>>distance;
+cout<<"enter first ordinate: \n";
+cin>>first;
+cout<<"enter last ordinate : \n";
+cin>>last;
+cout<<"enter the 10 offset readings : \n";
+cin>>offset1>>offset2>>offset3>>offset4>>offset5>>offset6>>offset7>>offset9>>offset10;
+trapezoidal=distance/2*(first+last+2*(offset1+offset2+offset3+offset4+offset5+offset6+offset7+offset8+offset9+offset10));
+cout<<"the area obtained for 10 offset readings is equal to : \n"<<trapezoidal;
+}
+else if(number==11)
+{
+cout<<"THE USER HAS CHOSEN 11 OFFSET READINGS : \n";
+cout<<"enter the common distance : \n";
+cin>>distance;
+cout<<"enter the  first ordinate : \n";
+cin>>first;
+cout<<"enter the last ordinate : \n";
+cin>>last;
+cout<<"enter the 11 offset readings : \n";
+cin>>offset1>>offset2>>offset3>>offset4>>offset5>>offset6>>offset7>>offset8>>offset9>>offset10>>offset11;
+trapezoidal=distance/2*(first+last+2*(offset1+offset2+offset3+offset4+offset5+offset6+offset7+offset8+offset9+offset10+offset11));
+cout<<"the area obtained for 11 offset readings is equal to : \n"<<trapezoidal;
+}
+else if(number==12)
+{
+cout<<"THE USER HAS CHOSEN 12 OFFSET READINGS : \n";
+cout<<"enter the common distance : \n";
+cin>>distance;
+cout<<"enter the first ordinate: \n";
+cin>>first;
+cout<<"enter the last ordinate : \n";
+cin>>last;
+cout<<"enter the 12 offset readings : \n";
+cin>>offset1>>offset2>>offset3>>offset4>>offset5>>offset6>>offset7>>offset8>>offset9>>offset10>>offset11>>offset12;
+trapezoidal=distance/2*(first+last+2*(offset1+offset2+offset3+offset4+offset5+offset6+offset7+offset8+offset9+offset10+offset11+offset12));
+cout<<"the area obtained for 12 offset readings is equal to : \n"<<trapezoidal;
+}
+else if(number==13)
+{
+cout<<"THE USER HAS CHOSEN 13 OFFSET READINGS:\n";
+cout<<"enter the common distance : \n";
+cin>>distance;
+cout<<"enter the first ordinate: \n";
+cin>>first;
+cout<<"enter the last ordinate : \n";
+cin>>last;
+cout<<"enter the 13 offset readings : \n";
+cin>>offset1>>offset2>>offset3>>offset4>>offset5>>offset6>>offset7>>offset8>>offset9>>offset10>>offset11>>offset12>>offset13;
+trapezoidal=distance/2*(first+last+2*(offset1+offset2+offset3+offset4+offset5+offset6+offset7+offset8+offset9+offset10+offset11+offset12+offset13));
+cout<<"the area obtained for 13 offset readings is equal to : \n"<<trapezoidal;
+}
+else if(number==14)
+{
+cout<<"THE USER HAS CHOSEN 14 OFFSET READINGS : \n";
+cout<<"enter the common distance : \n";
+cin>>distance;
+cout<<"enter the first ordinate : \n";
+cin>>first;
+cout<<"enter the last ordinate : \n";
+cin>>last;
+cout<<"enter the 14 offset readings : \n";
+cin>>offset1>>offset2>>offset3>>offset4>>offset5>>offset6>>offset7>>offset8>>offset9>>offset10>>offset11>>offset12>>offset13>>offset14;
+trapezoidal=distance/2*(first+last+2*(offset1+offset2+offset3+offset4+offset5+offset6+offset7+offset8+offset9+offset10+offset11+offset12+offset13+offset14));
+cout<<"the area obtained for 14 offset readings is equal to : \n"<<trapezoidal;
+}
+else if(number==15)
+{
+cout<<"THE USER HAS CHOSEN 15 OFFSET READINGS : \n";
+cout<<"enter the common distance : \n";
+cin>>distance;
+cout<<"enter the first ordinate : \n";
+cin>>first;
+cout<<"enter the last ordinate : \n";
+cin>>last;
+cout<<"enter the 15 offset readings : \n";
+cin>>offset1>>offset2>>offset3>>offset4>>offset5>>offset6>>offset7>>offset8>>offset9>>offset10>>offset11>>offset12>>offset13>>offset14>>offset15;
+trapezoidal=distance/2*(first+last+2*(offset1+offset2+offset3+offset4+offset5+offset6+offset7+offset8+offset9+offset10+offset11+offset12+offset13+offset14+offset15));
+cout<<"the area obtained for 15 offset readings is equal to : \n"<<trapezoidal;
+}
+else if(num=16)
+{
+cout<<"THE PROGRAMME CAN NOT COMPUTE AREA FOR MORE THAN 15 OFFSET READINGS :\n";
+}
+}
+getch();
+}
